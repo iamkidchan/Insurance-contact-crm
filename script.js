@@ -5,7 +5,7 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
     var jsonData = {};
     formData.forEach((value, key) => {jsonData[key] = value});
     
-    // Replace with your Google Apps Script Web App URL
+    // https://script.google.com/macros/s/AKfycbzBqyi0JZlveP6LT84qgemZre4BMKjUnOhM5UBHlEI3vdvV7Mk4Kudubo0h9V9Ucg0/exec
     fetch('YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL', {
         method: 'POST',
         body: JSON.stringify(jsonData)
